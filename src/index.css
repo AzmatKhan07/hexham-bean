@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Outfit", serif;
+}
+
+.container {
+  @apply w-[90%] m-auto;
+}
+
+ul li a.active,
+ul li a:hover {
+  @apply text-black transition-all duration-300;
+}
+
+.mainBtn {
+  @apply px-8 py-3 rounded-full bg-primary text-black;
+}
+
+.heroBanner {
+  background-image: url(/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+}
