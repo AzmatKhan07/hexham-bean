@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Client from "../components/Client";
 import InfoSection from "../components/InfoSection";
 import ContactForm from "../components/ContactForm";
+import MapComponent from "../components/Map";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <Client />
       <InfoSection />
       <ContactForm />
-      {/* <MapComponent /> */}
+      <MapComponent />
     </main>
   );
 };
