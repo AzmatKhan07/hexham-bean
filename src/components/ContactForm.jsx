@@ -8,24 +8,27 @@ const ContactForm = () => {
         {/* Contact Form Section */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h3 className="text-xl font-bold mb-4">CONTACT US</h3>
-          <form className="space-y-4">
+         <form className="space-y-4" action={"https://getform.io/f/bejjzxna"} method="POST">
             <input
               type="text"
               placeholder="Name"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
               required
+              name="name"
             />
             <input
               type="tel"
               placeholder="Phone"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
               required
+              name="phone"
             />
             <input
               type="email"
               placeholder="Email*"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
               required
+              name="email"
             />
 
             <textarea
@@ -33,6 +36,7 @@ const ContactForm = () => {
               rows="4"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
               required
+              name="message"
             />
             <button
               type="submit"
