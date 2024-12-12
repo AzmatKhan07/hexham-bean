@@ -68,31 +68,35 @@ const Navbar = () => {
             </li>
             <li className="text-neutral-600">
               <NavLink
+                to="/menu-pricing"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Prices
+              </NavLink>
+            </li>
+            <li className="text-neutral-600">
+              <NavLink
                 to="/opening-hours"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Opening Hours
               </NavLink>
             </li>
+
             <li className="text-neutral-600">
-              <NavLink to="/about-us" onClick={() => setMobileMenuOpen(false)}>
-                About
+              <NavLink to="/menu" onClick={() => setMobileMenuOpen(false)}>
+                Menu
               </NavLink>
             </li>
             <li className="text-neutral-600">
-              <NavLink
-                to="/contact-us"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact Us
+              <NavLink to="/gallery" onClick={() => setMobileMenuOpen(false)}>
+                gallery
               </NavLink>
             </li>
+
             <li className="text-neutral-600">
-              <NavLink
-                to="/menu-pricing"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Prices
+              <NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>
+                About Us
               </NavLink>
             </li>
           </ul>
