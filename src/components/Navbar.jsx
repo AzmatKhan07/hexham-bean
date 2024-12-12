@@ -30,6 +30,9 @@ const Navbar = () => {
           <li className="text-neutral-600">
             <NavLink to="/gallery">Gallery</NavLink>
           </li>
+          <li className="text-neutral-600">
+            <NavLink to="/about">About Us</NavLink>
+          </li>
         </ul>
 
         {/* WhatsApp Button */}
