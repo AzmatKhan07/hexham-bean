@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white/90 py-6 fixed w-full">
+    <header className="bg-white/90 py-3 fixed top-0 left-0 right-0 z-50 w-full">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link className="text-2xl font-bold text-primary uppercase" to="/">
-          Hexham <span className="text-black">Bean</span>
+          <img className="w-20" src="/project_logo.png" alt="logo" />
         </Link>
 
         {/* Desktop Menu */}
@@ -29,6 +29,9 @@ const Navbar = () => {
           </li>
           <li className="text-neutral-600">
             <NavLink to="/gallery">Gallery</NavLink>
+          </li>
+          <li className="text-neutral-600">
+            <NavLink to="/services">Services</NavLink>
           </li>
           <li className="text-neutral-600">
             <NavLink to="/about">About Us</NavLink>
@@ -94,6 +97,11 @@ const Navbar = () => {
               </NavLink>
             </li>
 
+            <li className="text-neutral-600">
+              <NavLink to="/services" onClick={() => setMobileMenuOpen(false)}>
+                services
+              </NavLink>
+            </li>
             <li className="text-neutral-600">
               <NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>
                 About Us

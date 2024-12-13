@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import MenuPricing from "./pages/MenuPricing";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/menu-pricing" element={<MenuPricing />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </>
